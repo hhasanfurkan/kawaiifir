@@ -1,7 +1,7 @@
 var furki = require(`dbd.js`)
 var fs = require('fs') 
 var bot = new furki.Bot({
-  token: "ODIxODMyMzI0NTg0MzA4ODE2.YFJc_w.W0KcaRkgbNqEriGGp2zzuDGeFis", //buraya token yazmayın .env de TOKEN yazan kısmın altı boş olmakta onun altına bot token yazmanız yeterlidir
+  token: "", //buraya token yazmayın .env de TOKEN yazan kısmın altı boş olmakta onun altına bot token yazmanız yeterlidir
   prefix: ["$getServerVar[Prefix]","kf!","kf?","kf*","kf/","kf&","kf#"], // satır 24 kısmındaki tm! prefixdir onu değiştirtmeniz yeterlidir 
   mobile: true,//burayı false yaparsanız botunuz telefonda olarak gözükmez böyle durursa telefonda gözükür (hawli durur)
   fetchInvites: true//buraya ellemeyin
