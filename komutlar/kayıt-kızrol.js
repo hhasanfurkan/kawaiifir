@@ -1,0 +1,19 @@
+module.exports = {
+  name: "kızrol",
+  aliases: ['kız-rol'],
+  code: `$setServerVar[kız;$mentionedRoles[1]]
+  $argsCheck[>1;Lütfen bir rol belirleyin. Örneğin: *$getServerVar[Prefix]kızrol @rol** ]
+  $title[Rol Kaydedildi]
+  $description[Kız Rolü Başarıyla **$mentionedRoles[1]** olarak kaydedildi.
+  
+  Rolü Değiştirmek için aynı komutu yeni rol için uygulayın.
+  Kaydeden Yetkili : $username[$authorID]
+  Rol : $mentionedRoles[1]]
+  $footer[$username;$authorAvatar]
+  $addTimeStamp
+  $color[303136]
+  $onlyPerms[admin;Rolü Kaydetmek İçin **Yönetici** Yetkisine Sahip Olmanız Gerekmektedir.]
+  $onlyIf[$getServerVar[kayıtsistemi]==açık;Bu komutu kullanmak için kayıt sistemini açmanız gerekiyor. Açmak için **$getServerVar[Prefix]kayıtsistemi aç** yazmalısınız.]
+  $deletecommand
+  $deleteIn[10s]`
+};
